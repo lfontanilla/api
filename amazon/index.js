@@ -1,4 +1,4 @@
-exports.amazonsearch = function(req, res) {
+exports.search = function(req, res) {
   // Load dependency
   var apa = require('apa-client');
 

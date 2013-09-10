@@ -3,9 +3,11 @@
  */
 var express = require('express');
 
-var app = express(), routes = require('./routes/index');
+var app = express(), amazon = require('./amazon/index');
 
 app.use(express.logger('dev'));
-app.get('/', routes.amazonsearch);
+
+app.get('/amazonsearch', amazon.search);
+
 app.listen(4000, '127.0.0.1');
-console.log('Server running at http://127.0.0.1:4000/');
+console.log('Server running at http://127.0.0.1:4000');
