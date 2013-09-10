@@ -4,8 +4,10 @@
   "private": "true",
   "dependencies": {
     "express": "*",
-    "jade": "*",
-    "stylus": "*",
-    "nib": "*"
+    "apa-client": "*",
+    "nodemon": "*"
+  },
+  "scripts": {
+    "start": "nodemon api.js"
   }
 }
