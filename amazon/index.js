@@ -20,7 +20,7 @@ exports.search = function(req, res) {
   client.execute('ItemSearch', {
     SearchIndex: 'All',
     Keywords: searchterm,
-    ResponseGroup: 'OfferFull',
+    ResponseGroup: 'OfferFull,Images,ItemAttributes',
     Availability: 'Available'
   }, function(err, data) {
     if (err)
