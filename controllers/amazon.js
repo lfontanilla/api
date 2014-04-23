@@ -19,11 +19,6 @@ exports.search = function(req, res) {
   var apa = require('apa-client');
 
 // Create a client
-  var client = apa.createClient({
-    "awsAccessKeyId": "AKIAJVWXAWPI3Q6JFQWA", // your aws access key id here
-    "awsSecretKey": "QsoKDwM94ZARBLJGdvtIVHDGUnh+dP/Ue4FLosSi", // your secret key here
-    "associateTag": "1921-5018-6753" // your associate tag here
-  });
 
 // Switch locale (default endpoint is ecs.amazonaws.com)
   client.switchLocale('us'); // new endpoint is ecs.amazonaws.fr
